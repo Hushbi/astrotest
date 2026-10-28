@@ -1,6 +1,6 @@
 ---
 import Footer from "../components/Footer.astro";
-import Navigation from "../components/Navigation.astro";
+import Header from "../components/Header.astro";
 import "../styles/global.css";
 const pageTitle = "Mon blog d'apprentissage";
 ---
@@ -15,9 +15,8 @@ const pageTitle = "Mon blog d'apprentissage";
     <title>{pageTitle}</title>
   </head>
   <body>
-    <h1>Mon site Astro</h1>
-    <Navigation />
-
+    <Header />
+    <h1>{pageTitle}</h1>
     <ul>
       <li>
         <a href="/posts/post-1/">Article 1</a>
