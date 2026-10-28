@@ -1,11 +1,15 @@
 ---
+import { globalRegistry } from "astro:schema";
+
+import "../styles/global.css";
+
 const pageTitle = "À propos de moi";
 
 const identity = {
   firstName: "Cheikh",
   country: "France",
   occupation: "Papa",
-  hobbies: ["photographie", "observation des oiseaux", "baseball"],
+  hobbies: ["le roller", "regarder la F1", "ouais"],
 };
 const skills = [
   "HTML",
