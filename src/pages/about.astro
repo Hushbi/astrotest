@@ -1,9 +1,8 @@
 ---
+import Footer from "../components/Footer.astro";
 import Navigation from "../components/Navigation.astro";
-import { globalRegistry } from "astro:schema";
 
 import "../styles/global.css";
-import Navigation from "../components/navigation.astro";
 
 const pageTitle = "À propos de moi";
 
@@ -103,5 +102,6 @@ const textCase = "uppercase";
         <p>Mon objectif n'est pas de 3 jours.</p>
       )
     }
+    <Footer />
   </body>
 </html>
