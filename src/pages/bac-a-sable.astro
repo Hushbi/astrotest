@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CarteParfum from '../components/CarteParfum.astro';
+const parfums = [
+  { nom: "Bella Ragazza", prix: 14.95, promo: true },
+  { nom: "Exemple boisé", prix: 29.9 },
+];
+const pageTitle = "Bac à sable";
+---
+<BaseLayout pageTitle = {pageTitle}>
+  <h2>Parfums </h2>
+  {parfums.map((parfum) => <CarteParfum {...parfum} />)}
+
+</BaseLayout>

@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Compteur  from '../components/Compteur.jsx';
+const pageTitle = "Compteur";
+---
+<BaseLayout pageTitle = {pageTitle}>
+  <h2>Parfums </h2>
+<p>sans client:load :</p>
+<Compteur />
+<p>Avec client:load :</p>
+<Compteur client:load/>
+
+</BaseLayout>

@@ -1,0 +1,19 @@
+---
+interface Props {
+  nom: string;
+  prix: number;
+  promo?: boolean;
+}
+
+const { nom, prix, promo = false } = Astro.props;
+const prixAffiche = new Intl.NumberFormat("fr-FR", {
+  style: "currency",
+  currency: "EUR",
+}).format(prix);
+---
+
+<article>
+  <h3>{nom}</h3>
+  <p>{prixAffiche}</p>
+  {promo && <span>Bonne affaire</span>}
+</article>
